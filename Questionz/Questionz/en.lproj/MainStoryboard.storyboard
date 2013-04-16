@@ -115,16 +115,70 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="doneButtonPress:" destination="zLP-Xx-zb4" eventType="touchUpInside" id="b4h-zl-fHT"/>
                                     <segue destination="zdJ-kw-NiY" kind="unwind" unwindAction="unwindFromNewQuestionView:" id="tC6-9C-2iJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Question:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oib-HR-aif">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Vh-bz-KqJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="RCQ-l6-RIQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Answer Options:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIQ-Rc-tDG">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ek2-Hq-MIN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="A1V-YJ-FXx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFA-br-RGR">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Add option">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addOptionButtonPress:" destination="zLP-Xx-zb4" eventType="touchUpInside" id="T2u-HO-lUz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9QF-2j-lIl" firstAttribute="top" secondItem="dVb-Cp-0Py" secondAttribute="top" constant="180" id="e6l-rf-M5N"/>
-                            <constraint firstItem="9QF-2j-lIl" firstAttribute="centerX" secondItem="dVb-Cp-0Py" secondAttribute="centerX" type="default" id="s1h-Un-TXl"/>
+                            <constraint firstItem="zIQ-Rc-tDG" firstAttribute="top" secondItem="dVb-Cp-0Py" secondAttribute="top" constant="142" id="2FD-Vb-bxX"/>
+                            <constraint firstItem="Ek2-Hq-MIN" firstAttribute="trailing" secondItem="8Vh-bz-KqJ" secondAttribute="trailing" type="default" id="JCM-rx-SAS"/>
+                            <constraint firstItem="zIQ-Rc-tDG" firstAttribute="centerX" secondItem="dVb-Cp-0Py" secondAttribute="centerX" type="default" id="MRV-uc-4p1"/>
+                            <constraint firstItem="Ek2-Hq-MIN" firstAttribute="top" secondItem="dVb-Cp-0Py" secondAttribute="top" constant="183" id="Y0A-V4-jNP"/>
+                            <constraint firstItem="8Vh-bz-KqJ" firstAttribute="top" secondItem="dVb-Cp-0Py" secondAttribute="top" constant="92" id="YXT-nH-S3Y"/>
+                            <constraint firstItem="9QF-2j-lIl" firstAttribute="leading" secondItem="dVb-Cp-0Py" secondAttribute="leading" constant="45" id="ds3-g7-iwU"/>
+                            <constraint firstItem="oib-HR-aif" firstAttribute="top" secondItem="dVb-Cp-0Py" secondAttribute="top" constant="48" id="fB3-u2-rtw"/>
+                            <constraint firstItem="MFA-br-RGR" firstAttribute="top" secondItem="dVb-Cp-0Py" secondAttribute="top" constant="234" id="flq-z5-LLd"/>
+                            <constraint firstItem="9QF-2j-lIl" firstAttribute="leading" secondItem="Ek2-Hq-MIN" secondAttribute="leading" type="default" id="jA8-1o-9JA"/>
+                            <constraint firstItem="oib-HR-aif" firstAttribute="leading" secondItem="dVb-Cp-0Py" secondAttribute="leading" constant="118" id="jVk-nz-di5"/>
+                            <constraint firstAttribute="bottom" secondItem="9QF-2j-lIl" secondAttribute="bottom" constant="28" id="kGP-DP-SNv"/>
+                            <constraint firstItem="MFA-br-RGR" firstAttribute="trailing" secondItem="Ek2-Hq-MIN" secondAttribute="trailing" type="default" id="khl-nE-JSF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="zIQ-Rc-tDG" id="Cek-bv-xOC"/>
+                        <outlet property="firstAnswerTextField" destination="Ek2-Hq-MIN" id="rp7-As-XD7"/>
+                        <outlet property="questionLabel" destination="oib-HR-aif" id="hkx-N1-dTk"/>
+                        <outlet property="questionTextField" destination="8Vh-bz-KqJ" id="uZ7-DL-7Qc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndD-O2-vC3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="zdJ-kw-NiY" userLabel="Exit" sceneMemberID="exit"/>
@@ -135,6 +189,14 @@
     <classes>
         <class className="JALNewQuestionViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JALNewQuestionViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doneButtonPress:"/>
+                <relationship kind="outlet" name="answerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="firstAnswerTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="questionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="questionTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="uiStepperButton" candidateClass="UIStepper"/>
+            </relationships>
         </class>
         <class className="JALQuestionDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JALQuestionDetailViewController.h"/>
@@ -142,16 +204,11 @@
         <class className="JALViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JALViewController.h"/>
             <relationships>
-                <relationship kind="action" name="unwindFromNewQuestionView:" candidateClass="UIStoryboardSegue"/>
-                <relationship kind="action" name="unwindFromShowDetailView:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UIStoryboardSegue" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

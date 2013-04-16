@@ -10,5 +10,5 @@
 
 @interface JALViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-
+@property NSMutableArray* questions;
 @end
